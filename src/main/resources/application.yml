@@ -13,3 +13,6 @@ server:
     key-store-password: "changeit"
     key-alias: "two-way-ssl-spring-boot-server"
     key-store-type: "JKS"
+    trust-store: "classpath:jks/server-truststore.jks"
+    trust-store-password: "changeit"
+    trust-store-type: "JKS"
