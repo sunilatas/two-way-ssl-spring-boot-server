@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: "two-way-ssl-server"
+
+server:
+  port: "9002"
+  servlet:
+    contextPath: "/two-way-ssl-server"
+  ssl:
+    enabled: "true"
+    client-auth: "need"
+    key-store: "classpath:jks/ssl-server-keystore.jks"
+    key-store-password: "changeit"
+    key-alias: "two-way-ssl-spring-boot-server"
+    key-store-type: "JKS"
